@@ -1,1 +1,86 @@
-<div style="background-color: red"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+    <title>Onrizon TV</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-family: 'Teko', sans-serif;
+        }
+        .onrizontv {
+            background-color: #000000;
+            height: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .content {
+            align-self: stretch;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-onrizontv {
+            width: 175px;
+            height: 48px;
+            background-image: url(/site/imgs/onrizontv.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 1px #FFF solid;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+        nav a {
+            color: #FFF;
+            margin-left: 60px;
+            font-size: 17px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #22BBFF;
+        }
+        .new {
+            margin-top: -5px;
+        }
+        .new:before {
+            content: 'NEW!';
+            color: #000000;
+            font-size: 11px;
+            background-color: #21BAFF;
+            padding: 2px 5px;
+            border-radius: 2px;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="onrizontv">
+        <div class="content">
+            <a href="https://onrizon.tv/" target="_blank" class="logo-onrizontv"></a>
+            <nav>
+                <a target="_blank" href="https://wos.gg">WORDS ON STREAM</a>
+                <a target="_blank" href="https://gos.gg">GARTIC ON STREAM</a>
+                <a target="_blank" href="https://gartic.show">GARTIC SHOW</a>
+                <a target="_blank" href="https://streampairs.com">STREAM PAIRS</a>
+                <a class="new" target="_blank" href="#">EMOTE SEARCH</a>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
